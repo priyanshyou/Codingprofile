@@ -1,0 +1,122 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark_Grey: hsl(0, 0%, 12%);
+    --Off_Black: hsl(0, 0%, 8%);
+}
+
+body{
+    background-color: var(--Off_Black);
+    color: var(--White);
+    min-height: 100vh;
+    font-family: "Inter",sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    padding :1.8rem 3rem;
+    flex-direction: column;
+}
+
+.container{
+    background-color: var(--Dark-Grey);
+    padding: 1.4rem;
+    margin: auto;
+    width: 18rem;
+    height: 29rem;
+    border-radius: 0.3rem; 
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+
+.img_profile{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+h1{
+    color: var(--White);
+    font-size: 1rem;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: var(--White);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.container{
+    max-width: 1000px;
+    background-color: var(--Dark_Grey);
+    margin:auto;
+    border-radius: 1rem;
+    padding: 1.4rem;
+    width: 18rem;
+}
+
+.btn{
+    background-color: var(--Grey);
+    color: var(--White);
+    margin-top: 1rem 0;
+    padding: 0.6rem 0.8rem;
+    border: none;
+    border-radius: 0.4rem;
+    margin-bottom: 0.6rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.location {
+    color: var(--Green);
+    font-size: 0.6rem;
+    margin-bottom: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+.quote{
+        font-size: 0.65rem;
+        margin-bottom: 0.75rem;
+        letter-spacing: 1px;
+        text-align: center;
+}
+
+.btn:hover{
+    background-color: var(--Green);
+    color: var(--Off_Black);
+}
+
+@media only screen and (max-width: 375px) {
+    .container {
+      width: 300px;
+    }
+    .quote {
+      font-size: 0.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
